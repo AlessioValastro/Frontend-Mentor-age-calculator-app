@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+
+  <main class="main">
+    <div class="main__inputContainer">
+      <div class="main__inputContainer-inputSingle">
+        <h2 id="dayTitle">day</h2>
+        <input type="text" name="day" id="inputDay" placeholder="DD">
+        <p id="emptyDay" class="hidden">This field is required</p>
+        <p id="invalidDay" class="hidden">Must be a valid day</p>
+      </div>
+      <div class="main__inputContainer-inputSingle">
+        <h2 id="monthTitle">month</h2>
+        <input type="text" name="month" id="inputMonth" placeholder="MM">
+        <p id="emptyMonth" class="hidden">This field is required</p>
+        <p id="invalidMonth" class="hidden">Must be a valid month</p>
+      </div>
+      <div class="main__inputContainer-inputSingle">
+        <h2 id="yearTitle">year</h2>
+        <input type="text" name="year" id="inputYear" placeholder="YYYY">
+        <p id="emptyYear" class="hidden">This field is required</p>
+        <p id="invalidYear" class="hidden">Must be in the past</p>
+        <p id="tooOld" class="hidden">Man, just give up...</p>
+      </div>
+      <button id="submitButton">
+        <img src="./assets/images/icon-arrow.svg" alt="">
+      </button>
+    </div>
+  
+      
+    
+    <div class="main__outputContainer">
+      <label for="years"><span id="outputYears">--</span>years</label>
+      <label for="month"><span id="outputMonths">--</span>months</label>
+      <label for="days" ><span id="outputDays">--</span>days</label>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
